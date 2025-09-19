@@ -181,6 +181,104 @@ footer p {
   opacity: 0.8;
 }
 
+.pwa-install {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.pwa-install h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.install-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.install-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.install-option {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.install-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.install-option h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.install-steps {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.install-steps p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-install {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-install:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.android-btn {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+}
+
+.android-btn:hover {
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
+
+.ios-btn {
+  background: linear-gradient(135deg, #007aff 0%, #0056cc 100%);
+}
+
+.ios-btn:hover {
+  box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
+}
+
 @media (max-width: 768px) {
   .nav-links {
     gap: 20px;
@@ -202,5 +300,26 @@ footer p {
   .features-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .install-buttons {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .install-option {
+    padding: 30px 20px;
+  }
+
+  .install-option h3 {
+    font-size: 1.5rem;
+  }
+
+  .pwa-install h2 {
+    font-size: 2rem;
+  }
+
+  .install-subtitle {
+    font-size: 1rem;
   }
 }
